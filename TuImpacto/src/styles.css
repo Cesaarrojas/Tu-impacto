@@ -1,1 +1,193 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.Colores{
+    color: #6dc72a;
+    color: #00507d;
+    color: #00c7dc;
+    color: #cee1e5;
+    color: #dae9ec;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+body{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Logo{
+    float: left;
+    padding-top: 15px;
+    padding-left:15px;
+    display: inline-block;
+}
+
+.Inicio{
+    background-image: url(assets/Imagenes/Oceano.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.Menu ul{
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.Menu ul li{
+    display: inline-block;
+}
+
+.Menu ul li a{
+    text-align: center;
+    color:white;
+    display: block;
+    padding-top: 10px;
+    /* padding-left: 16px; */
+    padding-bottom: 10px;
+    padding-right: 16px; 
+    font-size: 22px;
+}
+
+.boton1{
+    text-align: center;
+    font-size: 20px;
+    margin-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:white;
+}
+
+.btn{
+    background-color: #00507d;
+    color: #dae9ec;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.Estadisticas{
+   background-color: #dae9ec;
+   text-align: center;
+   padding: 40px;
+}
+
+.seccion{
+    padding-top: 10px;
+}
+
+.Impacto{
+    background-image: url(assets/Imagenes/Tortuga.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.T_Impacto{
+	padding-top: 400px;
+	padding-right: 100px;
+	color:white;
+	text-align: center;
+	font-size: 85px;
+}
+
+.Informacion {
+    background-color: #dae9ec;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.I_Info{
+	float: left;
+
+}
+ .MoreInfo {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.T_Info{
+	float: left;
+	text-align: left;
+	padding-right: 70px;
+}
+
+.T_MInfo{
+	float: left;
+	text-align: left;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+.I_MInfo{
+	float: left;
+}
+
+.I1_MInfo{
+	padding-bottom: 50px;
+	position: relative;
+	padding-left: 50px;
+}
+.T1_MInfo{
+	padding-right: 50px;
+}
+.Img{
+	padding-bottom: 70px;
+}
+
+.Actualidad{
+    background-image: url(assets/Imagenes/Glaciares.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.T_Actualidad{
+	padding-top: 400px;
+	padding-right: 100px;
+	color:white;
+	text-align: center;
+	font-size: 85px;
+}
+
+ .Noticias{
+    padding-top: 30px;
+    padding-bottom: 30px;
+ }
+
+  .frase{
+    font-size: 20px;
+     padding-top: 15px;
+     padding-left:50px;
+     padding-bottom:10px;
+ }
+ .frase1{
+    font-size: 15px;
+     padding-top: 0px;
+     padding-left:50px;
+     padding-bottom:0px;
+     margin-bottom: 2px;
+ }
+ .Redes{
+     padding-left: 30px;
+     padding-bottom:30px;
+ }
+ .footer{
+ 	background-color: #dae9ec;
+ }
+
+.borde0{
+    background-color: gray;
+    height: 20px;
+
+} 
+ .borde1 {
+    background-color: white;
+    height: 20px;
+    
+ }
