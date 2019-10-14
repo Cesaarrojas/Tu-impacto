@@ -1,0 +1,12 @@
+.texto{
+    color: #00507d;
+    text-align: center;
+    padding-top: 30px;
+}
+.Tarjetas{
+    padding:20px 0px;
+}
+.cardNo{
+    /* border-left:5px; */
+    opacity: .10;
+}

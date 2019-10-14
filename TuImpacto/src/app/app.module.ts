@@ -9,6 +9,9 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ConocenosComponent } from './conocenos/conocenos.component';
 import { InvolucrateComponent } from './involucrate/involucrate.component';
 
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+
 
 const routes :Route []= [
 {path:'', component:InicioComponent},
@@ -23,7 +26,9 @@ const routes :Route []= [
 
     InicioComponent,
     ConocenosComponent,
-    InvolucrateComponent
+    InvolucrateComponent,
+    FooterComponent,
+    HeaderComponent
 
 
   ],
