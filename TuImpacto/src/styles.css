@@ -23,9 +23,15 @@ body{
 }
 
 .Logo{
+<<<<<<< HEAD
 
     padding-top: 15px;
     padding-left:15px;
+=======
+    /* float: left; */
+    padding-top: 20px;
+    padding-left:35px;
+>>>>>>> b362244c2b4aae16f5c77dacfaa4e3678da02708
     display: inline-block;
 }
 
@@ -38,6 +44,7 @@ body{
 .Menu ul{
     float: right;
     list-style: none;
+    
     margin: 0;
     padding: 0; 
 }
@@ -50,7 +57,7 @@ body{
     text-align: center;
     color:white;
     display: block;
-    padding-top: 10px;
+    padding-top: 30px;
     /* padding-left: 16px; */
     padding-bottom: 10px;
     padding-right: 16px; 
@@ -91,7 +98,7 @@ body{
 
 .T_Impacto{
 	padding-top: 400px;
-	padding-right: 100px;
+	/* padding-right: 100px; */
 	color:white;
 	text-align: center;
 	font-size: 85px;
@@ -107,7 +114,7 @@ body{
 	float: left;
 
 }
- .MoreInfo {
+.MoreInfo {
     padding-top: 40px;
     padding-bottom: 60px;
 }
@@ -160,7 +167,7 @@ body{
     padding-bottom: 30px;
  }
 
-  .frase{
+    .frase{
     font-size: 20px;
      padding-top: 15px;
      padding-left:50px;
@@ -191,3 +198,7 @@ body{
     height: 20px;
     
  }
+.bordem{
+    padding: 10px;
+    padding-top:35px;
+}

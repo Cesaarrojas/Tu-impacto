@@ -4,9 +4,13 @@ import {RouterModule, Route} from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { InicioComponent } from './inicio/inicio.component';
 import { ConocenosComponent } from './conocenos/conocenos.component';
 import { InvolucrateComponent } from './involucrate/involucrate.component';
+
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 const routes :Route []= [
@@ -15,12 +19,17 @@ const routes :Route []= [
 {path: 'involucrate', component:InvolucrateComponent }
 ];
 
+
 @NgModule({
   declarations: [
     AppComponent,
+
     InicioComponent,
     ConocenosComponent,
-    InvolucrateComponent
+    InvolucrateComponent,
+    FooterComponent,
+    HeaderComponent
+
 
   ],
   imports: [
