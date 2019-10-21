@@ -1,0 +1,56 @@
+.T_Fondo{
+	float: left;
+	text-align: left;
+	padding-top: 110px;
+    color:white;
+    text-align: center;
+    font-size: 5em;
+}
+.datos{
+    font-size: 1.5em;
+}
+#nombre{
+    background-color: #dae9ec;
+    width: 22em;
+    height: 2em;
+    padding: 0.4em;
+}
+
+#apellido{
+    background-color: #dae9ec;
+    width: 22em;
+    height: 2em;
+    padding: 0.4em;
+}
+
+#edad{
+    background-color: #dae9ec;
+    width: 22em;
+    height: 2em;
+    padding: 0.4em;
+}
+
+#correo{
+    background-color: #dae9ec;
+    width: 22em;
+    height: 2em;
+    padding: 0.4em;
+}
+
+#contraseña{
+    background-color: #dae9ec;
+    width: 22em;
+    height: 2em;
+    padding: 0.4em;
+}
+
+#contraseña2{
+    background-color: #dae9ec;
+    width: 22em;
+    height: 2em;
+    padding: 0.4em;
+}
+
+
+
+

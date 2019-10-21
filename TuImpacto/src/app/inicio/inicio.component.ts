@@ -14,3 +14,8 @@ export class InicioComponent implements OnInit {
 
 }
 
+export class bordem {
+  showFiller = false;
+}
+
+

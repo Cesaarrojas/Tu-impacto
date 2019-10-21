@@ -7,15 +7,31 @@
     </div>
     
     <div class="col-6 d-none d-md-block Menu" >
-            <ul>
+            <ul class="nav">
                     <li><a routerLink="/">INICIO</a></li>
                     <li><a routerLink="/conocenos">CONÓCENOS</a></li>
-                    <li><a routerLink="/involucrate">INVOLÚCRATE</a></li>
-
+                    <li><a routerLink="/">INVOLÚCRATE</a>
+                        <ul class="col-6 col-xl-3 nav2">
+                            <form>
+                                <br><br>
+                                <li><input type="text" id="email" name="correo" placeholder="Correo Electrónico"></li>
+                                <br><br>
+                                <li><input type="password" id="passw" name="contraseña" placeholder="Contraseña"></li>
+                                <br><br>
+                                <li><a routerLink="/registrarse" id="cuenta">Crear una cuenta</a></li>
+                            
+                            </form>
+                            <button type="button" class="boton0"><a routerLink="/involucrate">Iniciar Sesión</a></button>
+                        </ul>
+                    </li>
             </ul>
     </div>
+
+    
+
         <div class="col-2  d-md-none  bordem">
-            <img src="assets/Imagenes/Menu.png" alt="IconoMenu">
+            <!--<img src="assets/Imagenes/Menu.png" alt="IconoMenu">-->
+            <button type="button" mat-button (click)="drawer.toggle()"><img src="assets/Imagenes/Menu.png" alt="IconoMenu"></button>
         </div>
     </div>
 </div>
@@ -31,7 +47,7 @@
 
 </div>
 
-<div class="container-fluid   border Impacto" style="height: 1000px;">
+<div class="container-fluid border Impacto" style="height: 1000px;">
         <div class="row">
 
         </div>
@@ -46,24 +62,24 @@
 <div class="container-fluid">
     <div class="row Estadisticas">
             <div class="col-6 col-md-2 seccion ">
-            <img src="assets/Imagenes/estadisticas.png"  alt="Estadistica1" width="150" height="150"> 
+            <img src="assets/Imagenes/Est3.png"  alt="Estadistica1" width="150" height="150"> 
             </div>
             <div class="col-6 col-md-2  ">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae maiores adipisci unde itaque. Maxime pariatur nobis dolorum quas in impedit amet. </p>
+                <p> mil millones de botellas de plástico de un solo uso son producidas cada año.</p>
                 
             </div>
             <div class="col-6 col-md-2 seccion ">
-                    <img src="assets/Imagenes/estadisticas.png"  alt="Estadistica1" width="150" height="150"> 
+                    <img src="assets/Imagenes/Est1.png"  alt="Estadistica1" width="150" height="150"> 
             </div>
             <div class="col-6 col-md-2  ">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit dolor dolore deserunt inventore aspernatur odit esse, consequatur dignissimos. </p>
+                <p> de los plásticos desechados hasta hoy ha terminado en el medioambiente.</p>
                     
             </div>
             <div class="col-6 col-md-2 seccion ">
-                    <img src="assets/Imagenes/estadisticas.png"  alt="Estadistica1" width="150" height="150"> 
+                    <img src="assets/Imagenes/Est2.png"  alt="Estadistica1" width="150" height="150"> 
             </div>
             <div class="col-6 col-md-2  ">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veritatis rerum in,  tempora fuga nihil itaque et corporis recusandae ratione laborum neque dolore saepe! </p>          
+                <p> de las tortugas marinas ha ingerido algún desecho plástico al confundirlo con alimento.</p>          
             </div>
         </div>
 </div>
@@ -74,8 +90,8 @@
                   <img src="assets/Imagenes/Plastico.jpg"  class="img-fluid" alt="Plastico" width="900" height="550"> 
                </div>
                <div class="col-12  col-md-5  T_Info">
-                   <br>
-                  <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></p>
+                   <br><br>
+                  <p><b>La contaminación del entorno marino debido al plástico causa anualmente la muerte de 100.000 mamíferos marinos y de un millón de aves, según cifras de la Organización de las Naciones Unidas (ONU). Hoy en día, de todo el plástico que se ha producido y consumido, solo el 9% se ha reciclado, el 12% se ha incinerado, y la gran mayoría, el 79% (unos 6.300 millones de toneladas), ha terminado en vertederos, océanos o en el medio ambiente y ya han sido hallados hasta en las zonas más profundas, a más de100.000 metros de profundidad.</b></p>
                    
                </div>
            </div>
@@ -84,7 +100,9 @@
              <div class="row MoreInfo">
                
                <div class="col-12  col-md-6   T_MInfo">
-                   <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                   <p>Cada año se desechan entre 5 y 12,7 millones de toneladas métricas de plástico por parte de las personas que viven a 50 kilómetros de la costa, pero los plásticos que se encuentra en la superficie representan menos del 15% de todos los desechos que hay en el mar.
+                    En el momento que los objetos de plástico llegan al mar pueden dispersarse fácilmente y quedarse flotando en la superficie, ser ingeridos por la fauna marina, hundirse y acumularse en su parte inferior o incluso pueden quedar atrapados en el hielo del Ártico, por esta razón es que se encuentran restos de plásticos alrededor del planeta
+                    </p>
                </div>
                 
                 <div class=" col-12  col-md-6  I_MInfo ">
@@ -99,7 +117,9 @@
            </div>
            <div class="col-12 col-md-6 T1_MInfo ">
                <br>
-               <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. </p>
+               <p>El rápido aumento de productos de plásticos comenzó en las décadas de 1920 y 1930 en Estados Unidos, desde donde se extendió al resto del mundo. En los últimos 65 años se calcula se han producido 8.300 millones de toneladas en el mundo y más de la mitad de todo esto ha sido fabricado en los últimos 13 años. 
+                Paradójicamente, cuando hace menos de un siglo se comenzó a usar este material a escala industrial, se pensó que era la promesa de un futuro utópico, hoy en día “Existen suficientes restos de plásticos en el mundo para cubrir un país entero del tamaño de Argentina”, dijo Roland Greyer, investigador de la Universidad de California en Santa Bárbara, no extraña entonces que los ecologistas hablen de un "apocalipsis del plástico" y se multiplique por el mundo la prohibición de su uso.
+                </p>
                     
            </div> 
        </div>
@@ -111,7 +131,9 @@
            </div>
            <div class="col-12 col-md-6 T1_MInfo ">
                <br>
-               <p>Tempora fuga nihil itaque et corporis recusandae ratione laborum neque dolore saepe Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. </p>
+               <p>Actualmente América, Japón y la Unión Europea son los mayores productores de desechos plásticos per cápita, estas zonas superficiales tienen una elevada concentración de microplásticos en las costas y el litoral, especialmente en regiones con altas poblaciones costeras, con sistemas de gestión de residuos inadecuados, pesquerías intensivas, o turismo elevado.
+                No hay duda de que el océano sostiene la vida en la tierra y el 80% del turismo en el mundo se realiza cerca del mar, pero la cantidad de millones de toneladas de residuos de plástico que existen en el mar, equivale a arrojar cada minuto un camión lleno de plástico en ellos, lo que revela una tendencia creciente en la producción y consumo de este material, sin preocuparse por el lugar a dónde van a parar y los efectos que causan.
+                </p>
                </div>
                         
            </div>
@@ -121,7 +143,7 @@
            <div class="col-10 Img">
    
                    <img src="assets/Imagenes/Bolsa.jpg" class="img-fluid" alt="Imagen"> 
-   
+                   
            </div>
         </div>      
     </div>
@@ -142,8 +164,8 @@
                            <img class="card-img-top" src="assets/Imagenes/Amazonas.jpg" alt="Card image" style="width:100%">
                            <div class="card-body info">
                              
-                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  quaerat non cum, velit itaque sapiente.</p>
-                             <a href="#" class="btn btn-primary">Ver más</a>
+                             <p class="card-text">Lo que sabemos hasta ahora de los incendios en el Amazonas: la selva podría ir camino a un desastre.</p>
+                             <a href="https://cnnespanol.cnn.com/2019/08/22/lo-que-sabemos-hasta-ahora-de-los-incendios-en-el-amazonas-la-selva-podria-ir-camino-a-un-desastre/" target="blank" class="btn btn-primary">Ver más</a>
                            </div>
                          </div>
    
@@ -153,11 +175,11 @@
            </div>
            <div class="col-8 col-md-4 seccion">
                    <div class="card" style="width:400px">
-                           <img class="card-img-top" src="assets/Imagenes/riego.jpg" alt="Card image" style="width:100%">
+                           <img class="card-img-top" src="assets/Imagenes/Volcan.jpg" alt="Card image" style="width:100%">
                            <div class="card-body info">
                              
-                             <p class="card-text "> Mollitia soluta voluptatum repellat totam beatae vitae asperiores eius, quaerat non cum, velit itaque sapiente.</p>
-                             <a href="#" class="btn btn-primary">Ver más</a>
+                             <p class="card-text ">Colombia perdió el 18% de su área glaciar en los últimos siete años; su biodiversidad está en peligro, según informe </p>
+                             <a href="https://cnnespanol.cnn.com/2018/07/13/colombia-perdio-el-18-de-su-area-glaciar-en-los-ultimos-siete-anos-su-biodiversidad-esta-en-peligro-segun-informe/" target="blank" class="btn btn-primary">Ver más</a>
                            </div>
                          </div>
    
@@ -166,11 +188,11 @@
        <div class="row justify-content-center Noticias">
                <div class="col-8 col-md-4 seccion ">
                        <div class="card" style="width:400px">
-                               <img class="card-img-top" src="assets/Imagenes/animales.jpg" alt="Card image" style="width:100%">
+                               <img class="card-img-top" src="assets/Imagenes/Petroleo.jpg" alt="Card image" style="width:100%">
                                <div class="card-body info">
                                  
-                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed dicta minima molestiae, molestias vero! </p>
-                                 <a href="#" class="btn btn-primary">Ver más</a>
+                                 <p class="card-text">Manchas de petróleo afectan a más de 150 localidades del noreste de Brasil.</p>
+                                 <a href="https://cnnespanol.cnn.com/2019/10/11/alerta-manchas-de-petroleo-afectan-a-mas-de-150-localidades-del-noreste-de-brasil/" target="blank" class="btn btn-primary">Ver más</a>
                                </div>
                              </div>
        
@@ -180,16 +202,14 @@
                </div>
                <div class="col-8 col-md-4 seccion">
                        <div class="card" style="width:400px">
-                               <img class="card-img-top" src="assets/Imagenes/llantas.jpg" alt="Card image" style="width:100%">
+                               <img class="card-img-top" src="assets/Imagenes/Dispositivo.jpg" alt="Card image" style="width:100%">
                                <div class="card-body info">
                                  
-                                 <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed dicta minima molestiae, molestias vero! </p>
-                                 <a href="#" class="btn btn-primary">Ver más</a>
+                                 <p class="card-text ">Un dispositivo flotante creado para limpiar el plástico del océano Pacífico finalmente está haciendo su trabajo.</p>
+                                 <a href="https://cnnespanol.cnn.com/2019/10/04/un-dispositivo-flotante-creado-para-limpiar-el-plastico-del-oceano-pacifico-finalmente-esta-haciendo-su-trabajo/" target="blank" class="btn btn-primary">Ver más</a>
                                </div>
                              </div>
        
                </div>
     </div>
-    
-
 
