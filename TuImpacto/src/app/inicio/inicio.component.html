@@ -8,21 +8,24 @@
     
     <div class="col-6 d-none d-md-block Menu" >
             <ul class="nav">
-                    <li><a routerLink="/">INICIO</a></li>
-                    <li><a routerLink="/conocenos">CONÓCENOS</a></li>
-                    <li><a routerLink="/">INVOLÚCRATE</a>
-                        <ul class="col-6 col-xl-3 nav2">
-                            <form>
-                                <br><br>
-                                <li><input type="text" id="email" name="correo" placeholder="Correo Electrónico"></li>
-                                <br><br>
-                                <li><input type="password" id="passw" name="contraseña" placeholder="Contraseña"></li>
-                                <br><br>
-                                <li><a routerLink="/registrarse" id="cuenta">Crear una cuenta</a></li>
-                            
-                            </form>
-                            <button type="button" class="boton0"><a routerLink="/involucrate">Iniciar Sesión</a></button>
-                        </ul>
+                    <li><a class="dropbtn" routerLink="/">INICIO</a></li>
+                    <li><a class="dropbtn" routerLink="/conocenos">CONÓCENOS</a></li>
+                    <li><div class="dropdown" style="float:right;">
+                            <a  class="dropbtn">INVOLÚCRATE</a>
+                            <div class="dropdown-content">
+                                    <form>
+                                            <br><br>
+                                            <li><input type="text" id="email" name="correo" placeholder="Correo Electrónico"class="bloque"></li>
+                                            <br><br>
+                                            <li><input type="password" id="passw" name="contraseña" placeholder="Contraseña"class="bloque"></li>
+                                            <br>
+                                            <li><a routerLink="/involucrate" class="bloque">Iniciar Sesión</a></li>
+                                            
+                                            <br>
+                                            <li><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
+                                    </form>
+                            </div>
+                        </div>
                     </li>
             </ul>
     </div>
@@ -38,22 +41,22 @@
 
 <div class="row  justify-content-center">
         <div class="col-4 boton1 borde11">
-            <button type="button" class="btn btn-block">IMPACTO</button>
+            <a class="btn"href="#SECCIONIMPACTO">IMPACTO</a>
 
         </div>
         <div class="col-4 boton1 borde11">
-            <button type="button" class="btn btn-block">ACTUALIDAD</button>
+            <a class="btn"href="#SECCIONACTUALIDAD">ACTUALIDAD</a>
         </div>
 
 </div>
 
-<div class="container-fluid border Impacto" style="height: 1000px;">
+<div class="container-fluid border Impacto" style="height: 1000px;"id="SECCIONIMPACTO">
         <div class="row">
 
         </div>
 
     <div class="row justify-content-center">
-        <div class="T_Impacto">
+        <div class="col-12 T_Impacto">
             
             <p><b>IMPACTO</b></p>
         </div>
@@ -84,7 +87,7 @@
         </div>
 </div>
 <div class="container-fluid">
-    <div class="row Informacion">
+    <div class="row Informacion" >
 
             <div class="col-12 col-md-7  I_Info ">
                   <img src="assets/Imagenes/Plastico.jpg"  class="img-fluid" alt="Plastico" width="900" height="550"> 
@@ -148,7 +151,7 @@
         </div>      
     </div>
 </div>   
-   <div class="container-fluid   border Actualidad" style="height: 1000px;">
+   <div class="container-fluid   border Actualidad" style="height: 1000px;" id="SECCIONACTUALIDAD">
              
            <div class="row">
                <div class="col-12  T_Actualidad">
@@ -157,9 +160,34 @@
                </div>
            </div>
    </div>
-   
+   <div class="row">
+       <div class="col-1 borde0">
+       </div>
+       <div class="col-1 borde1">
+        </div>
+        <div class="col-1 borde0">
+            </div>
+            <div class="col-1 borde1">
+                </div>
+                <div class="col-1 borde0">
+                    </div>
+                    <div class="col-1 borde1">
+                        </div>
+                        <div class="col-1 borde0">
+                            </div>
+                            <div class="col-1 borde1">
+                                </div>
+                                                <div class="col-1 borde0">
+                    </div>
+                    <div class="col-1 borde1">
+                        </div>
+                        <div class="col-1 borde0">
+                            </div>
+                            <div class="col-1 borde1">
+                                </div>
+   </div>
    <div class="row justify-content-center Noticias">
-           <div class="col-8 col-md-4 seccion">
+           <div class="col-8 col-md-4 col-lg-4 col-xl-4  seccion">
                    <div class="card" style="width:400px">
                            <img class="card-img-top" src="assets/Imagenes/Amazonas.jpg" alt="Card image" style="width:100%">
                            <div class="card-body info">
@@ -170,9 +198,7 @@
                          </div>
    
            </div>
-           <div class=col-1>
-   
-           </div>
+    
            <div class="col-8 col-md-4 seccion">
                    <div class="card" style="width:400px">
                            <img class="card-img-top" src="assets/Imagenes/Volcan.jpg" alt="Card image" style="width:100%">
@@ -197,9 +223,7 @@
                              </div>
        
                </div>
-               <div class=col-1>
-       
-               </div>
+
                <div class="col-8 col-md-4 seccion">
                        <div class="card" style="width:400px">
                                <img class="card-img-top" src="assets/Imagenes/Dispositivo.jpg" alt="Card image" style="width:100%">

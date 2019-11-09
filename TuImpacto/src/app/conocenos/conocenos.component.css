@@ -10,4 +10,9 @@
 .cardNo{
     /* border-left:5px; */
     opacity: .10;
+    transform: scale(0.8);
 }
+.name{
+    text-align: center;
+}
+.cardNo:hover{opacity: 100;transform: scale(1);}
