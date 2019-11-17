@@ -11,7 +11,11 @@
 
 *{
 	margin: 0;
-	padding: 0;
+    padding : 0;
+    padding-bottom : 0;
+    padding-left : 0;
+    padding-right : 0;
+    padding-top : 0;
 	list-style: none;
 	text-decoration: none;
 	border: none;
@@ -38,7 +42,6 @@ body{
 .Menu ul{
     float: right;
     list-style: none;
-    
     margin: 0;
     padding: 0; 
 }
@@ -121,11 +124,11 @@ body{
 
 .btn{
     background-color: #00507d;
-    color: #dae9ec;
-    font-size: 20px;
-    border-radius: 30px;
-    padding:10px 30px;
-  
+    color: white;
+    font-size: 1em;
+    border-radius: 20em;
+    padding:10px;
+ 
 }
 .btn a{
     text-decoration: none;
@@ -134,12 +137,24 @@ body{
 .Estadisticas{
    background-color: #dae9ec;
    text-align: left;
-   padding: 30px;
+   padding-top: 3em;
+   /*padding-bottom: 1em;*/
+   padding-right: 2.5em;
+   padding-left: 2.5em;
    font-size: 20px;
 }
 
+.seccioninfo{
+    /*padding-left: 2em;
+    padding-right: 2em;*/
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
 .seccion{
-    padding-top: 10px;
+    padding-bottom: 2em;
+    /*padding-left:2em;
+    padding-right:2em;*/
 }
 
 .Impacto{
@@ -172,17 +187,21 @@ body{
 
 .T_Info{
 	float: left;
-	text-align: left;
-    padding-right: 70px;
+	text-align: justify;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
     font-size: 1.4em;
+    line-height: 2em;
 }
 
 .T_MInfo{
 	float: left;
-	text-align: left;
-	padding-left: 50px;
+	text-align: justify;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     padding-top: 50px;
     font-size: 1.5em;
+    line-height: 2em;
 }
 
 .I_MInfo{
@@ -190,14 +209,20 @@ body{
 }
 
 .I1_MInfo{
-	padding-bottom: 50px;
+    
+	padding-bottom: 3em;
 	position: relative;
-    padding-left: 50px;
+    
 
 }
 .T1_MInfo{
-    padding-right: 50px;
+
+    text-align: justify;
+    padding-right: 2em;
     font-size: 1.5em;
+    line-height: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 .Img{
 	padding-bottom: 70px;
@@ -218,9 +243,16 @@ body{
 }
 
  .Noticias{
-    padding-top: 30px;
-    padding-bottom: 30px;
+  
+    padding-bottom: 1em;
+    padding-top: 2em;
 
+ }
+
+ .card{
+    padding-bottom: 2em;
+    font-size: 1em;
+    text-align: justify;
  }
 
  .Noticias img{
@@ -246,7 +278,6 @@ body{
      padding-bottom:30px;
 
  }
-
 
  .footer{
  	background-color: #dae9ec;
