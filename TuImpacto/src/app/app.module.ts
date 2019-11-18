@@ -12,6 +12,7 @@ import { InvolucrateComponent } from './involucrate/involucrate.component';
 
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 
 
 
@@ -19,6 +20,7 @@ const routes :Route []= [
 {path:'', component:InicioComponent},
 {path: 'conocenos', component:ConocenosComponent },
 {path: 'registrarse', component:RegistrarseComponent },
+{path: 'inicio_sesion', component:InicioSesionComponent },
 {path: 'involucrate', component:InvolucrateComponent }
 ];
 
@@ -32,7 +34,8 @@ const routes :Route []= [
     InvolucrateComponent,
     FooterComponent,
     HeaderComponent,
-    RegistrarseComponent
+    RegistrarseComponent,
+    InicioSesionComponent
 
 
   ],

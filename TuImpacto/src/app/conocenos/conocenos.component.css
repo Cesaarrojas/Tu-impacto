@@ -1,7 +1,7 @@
 .texto{
     color: #00507d;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 4em;
     font-size: 1.4em;
 }
 .Tarjetas{
@@ -15,4 +15,7 @@
 .name{
     text-align: center;
 }
-.cardNo:hover{opacity: 100;transform: scale(1);}
+.cardNo:hover{
+    opacity: 100;
+    transform: scale(1);
+}

@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+
 .Colores{
     color: #6dc72a;
     color: #00507d;
@@ -211,7 +212,8 @@ body{
 .I1_MInfo{
     
 	padding-bottom: 3em;
-	position: relative;
+    position: relative;
+    transition: transform .2s;
     
 
 }
@@ -224,9 +226,30 @@ body{
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
-.Img{
-	padding-bottom: 70px;
+
+
+
+.ImgBolsa{
+    padding-bottom: 10em;
 }
+
+/*INTERACCIONES IMAGENES*/
+.I1_MInfo:hover
+{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+        
+}
+
+.I_MInfo:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+}
+
+
+/*FIN INTERACCIONES*/
 
 .Actualidad{
     background-image: url(assets/Imagenes/Glaciares.jpg);

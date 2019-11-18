@@ -1,0 +1,38 @@
+.T_Fondo{
+	float: left;
+	text-align: left;
+	padding-top: 110px;
+    color:white;
+    text-align: center;
+    font-size: 5em;
+}
+.datos{
+    font-size: 1.5em;
+
+}
+
+
+#correo{
+    background-color: #dae9ec;
+    width: 22em;
+    height: 2em;
+    padding: 0.4em;
+}
+
+#contraseña{
+    background-color: #dae9ec;
+    width: 22em;
+    height: 2em;
+    padding: 0.4em;
+}
+.btn{
+    background-color: #00507d;
+    color: white !important;
+    font-size: 1em;
+    border-radius: 20em;
+    padding:10px;
+ 
+}
+.btn a{
+    text-decoration: none;
+}
