@@ -15,13 +15,13 @@ import { HeaderComponent } from './header/header.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 
 
-
 const routes :Route []= [
 {path:'', component:InicioComponent},
 {path: 'conocenos', component:ConocenosComponent },
 {path: 'registrarse', component:RegistrarseComponent },
 {path: 'inicio_sesion', component:InicioSesionComponent },
 {path: 'involucrate', component:InvolucrateComponent }
+
 ];
 
 

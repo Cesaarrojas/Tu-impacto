@@ -32,6 +32,7 @@ body{
     padding-top: 20px;
     padding-left:35px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .Inicio{
@@ -61,6 +62,7 @@ body{
     padding-right: 16px; 
     font-size: 22px;
     text-decoration: none;
+    
 }
 
 .nav >li{
@@ -193,6 +195,7 @@ body{
     padding-left: 1.5em;
     font-size: 1.4em;
     line-height: 2em;
+    color: #3b3b3b;
 }
 
 .T_MInfo{
@@ -427,3 +430,39 @@ body{
     }
   }
   .nubes:hover{opacity: 110;transform: scale(1.1);}
+
+  @media  (max-width:768px) {
+
+    .Menu .nav{
+        background: #00507d;
+        display: block;
+
+    }
+    .T_Impacto{
+        font-size: 7em;
+        padding-left: 0;
+    }
+
+    .T_Actualidad{
+        font-size: 5.1em !important;
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width:576px){
+    .T_Impacto{
+        font-size: 5em;
+        padding-left: 0;
+    }
+
+    .T_Actualidad{
+        font-size: 3.5em !important;
+        padding-left: 0;
+    }
+}
+    
+
+
+
+  

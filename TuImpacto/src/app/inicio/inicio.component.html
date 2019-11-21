@@ -1,14 +1,24 @@
 
 <div class="container-fluid Inicio" style="height: 850px;">
     <div class="row justify-content-around">
+        <!--<video src="assets/Imagenes/Video.mov" autoplay loop poster="assets/Imagenes/Oceano.jpg"></video>-->
     <div class="col-8 col-md-6 col-lg-4 col-xl-2 Logo  ">
-        <img src="assets/Imagenes/Logo1.png" alt="Logo">
+        <img src="assets/Imagenes/Logo1.png" alt="Logo" id="LogoImg" routerLink="/">
+
         
     </div>
+
+    <div class="col-2  d-md-none  bordem">
+        <!--<img src="assets/Imagenes/Menu.png" alt="IconoMenu">-->
+        <!--<button type="button"><img src="assets/Imagenes/Menu.png" alt="IconoMenu"></button>-->
+       
+        <button (click)="toggleMenu()"><img src="assets/Imagenes/Menu.png" alt="IconoMenu"></button>
+    </div>
     
-    <div class="col-6 d-none d-md-block Menu" >
-            <ul class="nav">
-                    <li><a class="dropbtn" routerLink="/">INICIO</a></li>
+    <!--<div class="col-6 d-none d-md-block Menu" >-->
+            <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  Menu" >
+                <ul class=" nav">
+                    <li><a class="col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 dropbtn" routerLink="/">INICIO</a></li>
                     <li><a class="dropbtn" routerLink="/conocenos">CONÓCENOS</a></li>
                     <li><div class="dropdown" style="float:right;">
                             <a  class="dropbtn">INVOLÚCRATE</a>
@@ -29,15 +39,9 @@
                     </li>
             </ul>
     </div>
-
-    
-
-        <div class="col-2  d-md-none  bordem">
-            <!--<img src="assets/Imagenes/Menu.png" alt="IconoMenu">-->
-            <button type="button" mat-button (click)="drawer.toggle()"><img src="assets/Imagenes/Menu.png" alt="IconoMenu"></button>
-        </div>
     </div>
 </div>
+
 
 <div class="row  justify-content-center">
         <div class="col-8 col-md-5 col-lg-4 col-xl-3 boton1 borde11">
@@ -56,7 +60,7 @@
         </div>
 
     <div class="row justify-content-around">
-        <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-6  T_Impacto">
+        <div class="col-10 col-sm-8 col-md-8 col-lg-8 col-xl-6  T_Impacto">
             
             <p><b>IMPACTO</b></p>
         </div>
@@ -160,7 +164,7 @@
    <div class="container-fluid   border Actualidad" style="height: 1000px;" id="SECCIONACTUALIDAD">
              
            <div class="row justify-content-around">
-               <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-6  T_Actualidad">
+               <div class="col-10 col-sm-8 col-md-8 col-lg-8 col-xl-4  T_Actualidad">
                    
                    <p><b>ACTUALIDAD</b></p>
                </div>

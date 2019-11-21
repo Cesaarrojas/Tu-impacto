@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+var $:any;
 
 @Component({
   selector: 'app-header',
@@ -13,3 +14,24 @@ export class HeaderComponent implements OnInit {
   }
 
 }
+
+class Image_animation {  
+  logoverde() {  
+   var obj = < HTMLImageElement > document.getElementById("LogoImg");  
+   obj.src = "assets/Imagenes/Logo2.png";  
+  }  
+  logoblanco() {  
+   var obj = < HTMLImageElement > document.getElementById("LogoImg");  
+   obj.src = "assets/Imagenes/Logo1.png";  
+  }  
+ }  
+ window.onload = () => {  
+  var greeter = new Image_animation();  
+  var obj = < HTMLImageElement > document.getElementById("LogoImg");  
+  obj.onmouseover = function() {  
+   greeter.logoverde();  
+  }  
+  obj.onmouseout = function() {  
+   greeter.logoblanco();  
+  }  
+ };
