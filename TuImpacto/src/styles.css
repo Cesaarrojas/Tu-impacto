@@ -324,6 +324,7 @@ body{
     padding-top:35px;
 }
 
+
 .Fondo{
     background-image: url(assets/Imagenes/Oceano3.jpg);
     background-position: center;
@@ -387,38 +388,19 @@ body{
   a.dropbtn:hover{color: #6dc72a!important;}
 
 
-
-  .nubes,.mapa{
-    position: absolute;
-    top:0;
-    right:0 ;
-    left:0;
-    bottom:0;
-    margin: auto;
-  
-  }
-  
-  .nubes{
-    width: 300px;
-    height: 300px;
-  }
-  .nubes img{
-    position: relative;
-    z-index: 20;
-    transform: scale(2);
-    opacity: .9;
-  }
   .mapa{
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    box-shadow: -30px -20px 0 0 rgba(0, 0, 0, .1) inset,
-    -70px -30px 0 0 rgba(0, 0, 0, .1) inset,
-    5px 5px 0 0 rgba(255, 255, 255, .2) inset;
-    background: url(assets/Imagenes/mapa.jpg);
+    padding-bottom: 20%;
+    box-shadow: /*-30px -20px 0 0 rgba(0, 0, 0, .1) inset,*/
+                 -30px -20px 0 0 rgba(0, 0, 0, .1) inset,
+                 5px 5px 0 0 rgba(255, 255, 255, .1) inset;
+    background: url(assets/Imagenes/Map.jpg);
     background-size: cover;
     transform: scale(2);
-    -webkit-animation: tierra-girando 5s infinite linear;
+    -webkit-animation: tierra-girando 60s infinite linear;
+    -moz-animation: tierra-girando 60s infinite linear;
   }
   
   @-webkit-keyframes tierra-girando {
@@ -426,10 +408,10 @@ body{
       background-position: left center;
     }
     to {
-      background-position: right center;
+      background-position: -2000px center;
     }
   }
-  .nubes:hover{opacity: 110;transform: scale(1.1);}
+  /*.nubes:hover{opacity: 110;transform: scale(1.1);}*/
 
   @media  (max-width:768px) {
 
@@ -448,6 +430,9 @@ body{
         padding-left: 0;
     }
 
+    .mapa{
+        transform: scale(1.5);
+    }
 }
 
 @media (max-width:576px){
@@ -459,6 +444,10 @@ body{
     .T_Actualidad{
         font-size: 3.5em !important;
         padding-left: 0;
+    }
+
+    .mapa{
+        transform: scale(1.3);
     }
 }
     
