@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-declare var jQuery:any;
-declare var $:any;
-
+import {utils} from 'pixi.js';
+declare let jQuery: any;
+declare let $: any;
 
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
 })
+
 export class InicioComponent implements OnInit {
 
   constructor() { }
@@ -15,9 +16,9 @@ export class InicioComponent implements OnInit {
   }
 
 
-public toggleMenu(){
-    $('.Menu').slideToggle();
-}
+  public toggleMenu() {
+      $('.Menu').slideToggle();
+  }
 }
 
 
@@ -27,23 +28,21 @@ export class bordem {
 
 class Image_animation {  
   logoverd() {  
-   var obj = < HTMLImageElement > document.getElementById("LogoImg");  
+   let obj = < HTMLImageElement > document.getElementById("LogoImg");  
    obj.src = "assets/Imagenes/Logo2.png";  
   }  
   logoblanc() {  
-   var obj = < HTMLImageElement > document.getElementById("LogoImg");  
+   let obj = < HTMLImageElement > document.getElementById("LogoImg");  
    obj.src = "assets/Imagenes/Logo1.png";  
   }  
  }  
- window.onload = () => {  
-  var greeter = new Image_animation();  
-  var obj = < HTMLImageElement > document.getElementById("LogoImg");  
-  obj.onmouseover = function() {  
-   greeter.logoverd();  
+  window.onload = () => {
+    let greeter = new Image_animation();  
+    let obj = < HTMLImageElement > document.getElementById("LogoImg");
+    obj.onmouseover = function() {
+      greeter.logoverd();
+    }  
+    obj.onmouseout = function() {
+      greeter.logoblanc();
   }  
-  obj.onmouseout = function() {  
-   greeter.logoblanc();  
-  }  
- };
-
-
+};
