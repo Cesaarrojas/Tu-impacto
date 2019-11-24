@@ -1,7 +1,7 @@
 .T_Fondo{
 	float: left;
 	text-align: left;
-	padding-top: 110px;
+	padding-top: 115px;
     color:white;
     text-align: center;
     font-size: 5em;
@@ -11,44 +11,103 @@
 }
 #nombre{
     background-color: #dae9ec;
-    width: 22em;
+    width: 100%;
     height: 2em;
     padding: 0.4em;
+    border-radius: 24px;
+    text-align: center;
 }
 
 #apellido{
     background-color: #dae9ec;
-    width: 22em;
+    width: 100%;
     height: 2em;
     padding: 0.4em;
+    border-radius: 24px;
+    text-align: center;
 }
 
 #edad{
     background-color: #dae9ec;
-    width: 22em;
+    width: 100%;
     height: 2em;
     padding: 0.4em;
+    border-radius: 24px;
+    text-align: center;
 }
 
 #correo{
     background-color: #dae9ec;
-    width: 22em;
+    width: 100%;
     height: 2em;
     padding: 0.4em;
+    border-radius: 24px;
+    text-align: center;
 }
 
 #contraseña{
     background-color: #dae9ec;
-    width: 22em;
+    width: 100%;
     height: 2em;
     padding: 0.4em;
+    border-radius: 24px;
+    text-align: center;
 }
 
 #contraseña2{
     background-color: #dae9ec;
-    width: 22em;
+    width: 100%;
     height: 2em;
     padding: 0.4em;
+    border-radius: 24px;
+    text-align: center;
+}
+
+footer{
+    background-color: #dae9ec;
+    color: #3b3b3b;
+}
+
+.frase{
+    padding-top: 2.5%;
+}
+
+.frases{
+    padding-bottom: 0.7em;
+}
+
+.red{
+    display: inline-block;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    width: 4em;
+}
+
+.BotonR{
+    background-color: #00507d;
+    color: #dae9ec !important;
+    width: 100%;
+    height: 2em;
+    padding: 1em;
+    border-radius: 24px;
+    text-align: center;
+
+}
+
+@media  (max-width:768px) {
+
+    .T_Fondo {
+        font-size: 4em;
+        padding-left: 0;
+    }
+}
+
+@media (max-width:576px){
+
+    .T_Fondo {
+        font-size: 4em;
+        padding-left: 0;
+    }
 }
 
 

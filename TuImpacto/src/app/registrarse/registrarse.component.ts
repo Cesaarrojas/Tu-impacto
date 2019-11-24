@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare var jQuery:any;
+declare var $:any;
 
 @Component({
   selector: 'app-registrarse',
@@ -11,5 +13,9 @@ export class RegistrarseComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  public toggleMenu(){
+    $('.Menu').slideToggle();
+}
 
 }

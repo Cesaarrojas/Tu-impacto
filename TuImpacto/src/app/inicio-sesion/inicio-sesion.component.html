@@ -1,41 +1,128 @@
-<app-header></app-header>
-<div class="container-fluid border Fondo " style="height: 400px;">
-        <div class="row">
 
-        </div>
-
-    <div class="row justify-content-center">
-        <div class="T_Fondo">
+<div class="container-fluid">
+        <div class="row justify-content-around headerColor">
+                <!--<video src="assets/Imagenes/Video.mov" autoplay loop poster="assets/Imagenes/Oceano.jpg"></video>-->
+            <div class="col-8 col-md-6 col-lg-4 col-xl-2 Logo  ">
+                <img src="assets/Imagenes/Logo1.png" alt="Logo" id="LogoImg" routerLink="/">
+        
+                
+            </div>
+        
+            <div class="col-2  d-md-none  bordem">
+                <!--<img src="assets/Imagenes/Menu.png" alt="IconoMenu">-->
+                <!--<button type="button"><img src="assets/Imagenes/Menu.png" alt="IconoMenu"></button>-->
+               
+                <button (click)="toggleMenu()"><img src="assets/Imagenes/Menu.png" alt="IconoMenu"></button>
+            </div>
             
-            <p><b>SUMATE AL CAMBIO</b></p>
+            <!--<div class="col-6 d-none d-md-block Menu" >-->
+                    <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  Menu" >
+                        <ul class=" nav">
+                            <li><a class="col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 dropbtn" routerLink="/">INICIO</a></li>
+                            <li><a class="dropbtn" routerLink="/conocenos">CONÓCENOS</a></li>
+                            <li><div class="dropdown" style="float:right;">
+                                    <a  class="dropbtn">INVOLÚCRATE</a>
+                                    <div class="dropdown-content">
+                                            <form>
+                                                    <!--<li><input type="text" id="email" name="correo" placeholder="Correo Electrónico"class="bloque"></li>
+                                                    <br><br>
+                                                    <li><input type="password" id="passw" name="contraseña" placeholder="Contraseña"class="bloque"></li>
+                                                    <br>-->
+                                                    <li><a routerLink="/inicio_sesion" class="bloque">Iniciar Sesión</a></li>
+                                                    <li><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
+                                                    <br>
+                                            </form>
+                                    </div>
+                                </div>
+                            </li>
+                    </ul>
+            </div>
+            </div>
         </div>
-    </div>
-</div>
-
-<div class="container registro">
+        
+        <body>
+        <div class="container-fluid border Fondo " style="height: 400px;">
+                <div class="row">
+        
+                </div>
+        
+            <div class="row justify-content-center">
+                <div class="T_Fondo">
+                    
+                    <p><b>SUMATE AL CAMBIO</b></p>
+                </div>
+            </div>
+        </div>
+        
         <div class="row justify-content-center" >
-            <div class="datos">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-6 col-xl-4 datos">
                     <form>
                         <br>
-   
-                        <div class="col-8 col-xl-8 daticos">
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">
                             <input type="text" id="correo" name="correo" placeholder="Correo Electrónico">
                             <br><br>
                         </div>
-                        <div class="col-8 col-xl-8 daticos">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">
                             <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
                             <br><br>
                         </div>
-
         
                       </form> 
-                <div class="row  justify-content-center">
-                            <div class="col-4 boton1 borde11">
-                                <button type="button" class="btn"><a routerLink="/involucrate">Iniciar Sesion</a></button>
+                <div class="row  justify-content-center ">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12 col-xl-10 boton2 ">
+                                <!--<button type="button" class="btn"><a routerLink="/involucrate">REGISTRARME</a></button>-->
+                                <a class="btn" routerLink="/involucrate">REGISTRARME</a>
                             <br><br>
                             </div>
                     </div>
         
             </div>
         </div>
-        </div>
+        
+        
+        </body>
+        
+        <footer>
+                <div class="container">
+                
+                    <div class="row ">
+                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 frase">
+                                   <p><b>"Como consumidor tienes mucho por hacer para el Planeta"</b></p>
+                           </div>
+                         </div>
+                        <div class="row  Redes">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" class="red">
+                                <a target="blank" href="https://www.facebook.com/">
+                                  <img src="assets/Imagenes/facebook.png" alt="facebook">
+                                </a>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-1" class="red">
+                                 <a target="blank" href="https://twitter.com/?lang=es">
+                                    <img src="assets/Imagenes/twitter.png" alt="twitter" >
+                                </a>
+                            </div>  
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-1" class="red">        
+                                <a target="blank" href="https://www.youtube.com/">
+                                    <img src="assets/Imagenes/youtube.png" alt="youtube">
+                                </a>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-1 "class="red" > 
+                                <a target="blank" href="https://www.instagram.com/?hl=es-la">
+                                    <img src="assets/Imagenes/instagram.png" alt="Instagram"  >
+                                </a>
+                            </div>
+                    </div>
+                
+                         <div class="row justify-content-around frases">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 frase1">
+                                   <p>Bogotá, D.C</p>
+                                   
+                               </div>
+                               <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 frase2 float-right">
+                                    <p>Tu Impacto Colombia 2019 Copyright © Todos los derechos reservados.</p>
+                                </div>
+                         </div>
+                        
+                    </div>
+        <footer>

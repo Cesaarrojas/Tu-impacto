@@ -1,3 +1,19 @@
-.footer{
+footer{
     background-color: #dae9ec;
+    color: #3b3b3b;
+}
+
+.frase{
+    padding-top: 2.5%;
+}
+
+.frases{
+    padding-bottom: 0.7em;
+}
+
+.red{
+    display: inline-block;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    width: 4em;
 }
