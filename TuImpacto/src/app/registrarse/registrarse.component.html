@@ -56,10 +56,10 @@
 
 <div class="row justify-content-center" >
     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-6 col-xl-4 datos">
-            <form>
+            <form (submit)="register()">
                 <br>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" [(ngModel)]="credentials.first_name">
                     <br><br>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">

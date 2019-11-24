@@ -28,8 +28,8 @@
                                             <br><br>
                                             <li><input type="password" id="passw" name="contraseña" placeholder="Contraseña"class="bloque"></li>
                                             <br>-->
-                                            <li><a routerLink="/inicio_sesion" class="bloque">Iniciar Sesión</a></li>
-                                            <li><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
+                                            <li *ngIf="!auth.isLoggedIn()"><a routerLink="/inicio_sesion" class="bloque">Iniciar Sesión</a></li>
+                                            <li *ngIf="!auth.isLoggedIn()"><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
                                     </form>
                             </div>
                         </div>

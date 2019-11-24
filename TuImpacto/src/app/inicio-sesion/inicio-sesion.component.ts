@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router'
+import { AuthenticationService, TokenPayLoad} from '../authentication.service'
 declare var jQuery:any;
 declare var $:any;
 
@@ -7,11 +9,26 @@ declare var $:any;
   templateUrl: './inicio-sesion.component.html',
   styleUrls: ['./inicio-sesion.component.css']
 })
-export class InicioSesionComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+export class InicioSesionComponent  {
+  credentials: TokenPayLoad ={
+    id:0,
+    nombre: '',
+    apellido: '',
+    email: '',
+    contraseña:'',
+    edad: 0,
+    puntos: 0
+  }
+  constructor(private auth:AuthenticationService, private router: Router) { }
+  login(){
+    this.auth.login(this.credentials).subscribe(
+      ()=>{
+        this.router.navigateByUrl('/involucrate')
+      },
+      err=>{
+        console.log(err)
+      }
+    )
   }
   public toggleMenu(){
     $('.Menu').slideToggle();
