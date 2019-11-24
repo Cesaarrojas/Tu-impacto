@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-var $:any;
+declare var jQuery:any;
+declare var $:any;
 
 @Component({
   selector: 'app-header',
@@ -12,6 +13,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+  
 
 }
 

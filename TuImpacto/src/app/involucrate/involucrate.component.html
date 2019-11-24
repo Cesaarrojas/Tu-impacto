@@ -1,42 +1,153 @@
-<app-header></app-header>
-<div class="container">
-
-
-        <!--<div class="row mundo justify-content-center">
-            <img class="iconM" src="assets/Imagenes/Mundo.png" alt="Mundo" style="width: 25em">
-        </div>
-    -->
-        <div class="row iconos1 justify-content-around">
-                <div class="icon1 col-8 col-md-4 col-xl-3" >
-                        <img class="iconP" src="assets/Imagenes/Botella.png" alt="Icono" style="width: 10em">
-                </div>
-        
-                <div class="icon2 col-8 col-md-4 col-xl-3" >
-                    <img class="iconP" src="assets/Imagenes/Cepillo.png" alt="Icono" style="width: 10em" >
-                </div>
-        
-                <div class="icon3 col-8 col-md-4 col-xl-3" >
-                    <img class="iconP" src="assets/Imagenes/BolsaP.png" alt="Icono" style="width: 10em">
-                </div>
-                </div>
-        <div class="nubes">
-            <img src="assets/Imagenes/nubes.png" alt="Nubes">
-            <div class="mapa">
-
-            </div>
-        </div>
-
-        <div class="row iconos2 justify-content-around">
-            <div class="icon1 col-8 col-md-4 col-xl-3" >
-                    <img class="iconP" src="assets/Imagenes/Recipiente.png" alt="Icono" style="width: 10em">
-            </div>
+<div class="container-fluid">
+    <div class="row justify-content-around headerColor">
+            <!--<video src="assets/Imagenes/Video.mov" autoplay loop poster="assets/Imagenes/Oceano.jpg"></video>-->
+        <div class="col-8 col-md-6 col-lg-4 col-xl-2 Logo  ">
+            <img src="assets/Imagenes/Logo1.png" alt="Logo" id="LogoImg" routerLink="/">
     
-            <div class="icon2 col-8 col-md-4 col-xl-3" >
-                <img class="iconP" src="assets/Imagenes/Maquina.png" alt="Icono" style="width: 10em" >
-            </div>
+            
+        </div>
     
-            <div class="icon3 col-8 col-md-4 col-xl-3" >
-                <img class="iconP" src="assets/Imagenes/Pitillos.png" alt="Icono" style="width: 10em">
+        <div class="col-2  d-md-none  bordem">
+            <!--<img src="assets/Imagenes/Menu.png" alt="IconoMenu">-->
+            <!--<button type="button"><img src="assets/Imagenes/Menu.png" alt="IconoMenu"></button>-->
+           
+            <button (click)="toggleMenu()"><img src="assets/Imagenes/Menu.png" alt="IconoMenu" ></button>
+        </div>
+        
+        <!--<div class="col-6 d-none d-md-block Menu" >-->
+                <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  Menu" >
+                    <ul class=" nav">
+                        <li><a class="col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 dropbtn" routerLink="/">INICIO</a></li>
+                        <li><a class="dropbtn" routerLink="/conocenos">CONÓCENOS</a></li>
+                        <li><div class="dropdown" style="float:right;">
+                                <a  class="dropbtn">INVOLÚCRATE</a>
+                                <div class="dropdown-content">
+                                        <form>
+                                                
+                                                <!--<li><input type="text" id="email" name="correo" placeholder="Correo Electrónico"class="bloque"></li>
+                                                <br><br>
+                                                <li><input type="password" id="passw" name="contraseña" placeholder="Contraseña"class="bloque"></li>
+                                                <br>-->
+                                                <li><a routerLink="/inicio_sesion" class="bloque">Iniciar Sesión</a></li>
+                                                <li><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
+                                                <br>
+                                        </form>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+        </div>
+    </div>
+<body>
+ 
+    <div class="estrella primera"></div>
+    <div class="estrella segunda"></div>
+    <div class="estrella tercera"></div>
+    <div class="estrella cuarta"></div>
+    <div class="estrella quinta"></div>
+    <div class="estrella sexta"></div>
+    <div class="estrella septima"></div>
+    <div class="estrella octava"></div>
+    <div class="estrella novena"></div>
+    <div class="estrella decima"></div>
+    <div class="estrella undecima"></div>
+    <div class="estrella doce"></div>
+
+    <div class="container">
+            <div class="row justify-content-around iconos1">
+                    <div class="icon1 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
+                            <img (click)="info1()"(dblclick)="acepto1()"  class="iconP" src="assets/Imagenes/Botella.png" id="Icono1" >
+
+                    </div>
+            
+                    <div class="icon2 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
+                            <img (click)="info2()"(dblclick)="acepto2()" class="iconP" src="assets/Imagenes/Cepillo.png" id="Icono2" >
+                    </div>
+            
+                    <div class="icon3 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
+                            <img (click)="info3()"(dblclick)="acepto3()" class="iconP" src="assets/Imagenes/BolsaP.png" id="Icono3">
+                    </div>
             </div>
+            <div class="infoIconos">
+                    <div class="icono" style="text-align: center;   letter-spacing: 2px;
+                    color:black; font-size: 1.8em;">
+                            <p id="base">Acciones para hacer tu aporte, pulsa una vez para ver la información y dos si ya la practicas!</p>
+    
+                    </div>
             </div>
-</div>
+
+
+            <div class="row justify-content-around nubes">
+                    <div class="map col-xs-12 col-sm-12 col-md-8 col-lg-4 col-xl-4" >
+                    <!--<img src="assets/Imagenes/Nube.png" alt="Nubes">-->
+                    <div id="PLANETA"class="mapa " style="margin-top:105px;filter: grayscale(100%) blur(5px);"></div>
+                   </div> 
+            </div>
+            <div class="row justify-content-center">
+                    <div class="termometro col-12">
+                        <img class="img-responsive imgt" src="assets/Imagenes/termometro.png" alt="Termometro" id="termometro">
+                     </div> 
+                </div>
+
+            <div class="row justify-content-around iconos2">
+                    <div class="icon1 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
+                            <img (click)="info4()"(dblclick)="acepto4()" class="iconP" src="assets/Imagenes/Recipiente.png" id="Icono4">
+                    </div>
+            
+                    <div class="icon2 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
+                            <img (click)="info5()"(dblclick)="acepto5()" class="iconP" src="assets/Imagenes/Maquina.png" id="Icono5" >
+                    </div>
+            
+                    <div class="icon3 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
+                            <img (click)="info6()"(dblclick)="acepto6()"class="iconP" src="assets/Imagenes/Pitillos.png" id="Icono6">
+                    </div>
+            </div>
+     </div>
+
+
+</body>
+
+<footer>
+        <div class="container">
+        
+            <div class="row ">
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 frase">
+                           <p><b>"Como consumidor tienes mucho por hacer para el Planeta"</b></p>
+                   </div>
+                 </div>
+                <div class="row  Redes">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" class="red">
+                        <a target="blank" href="https://www.facebook.com/">
+                          <img src="assets/Imagenes/facebook.png" alt="facebook">
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-1" class="red">
+                         <a target="blank" href="https://twitter.com/?lang=es">
+                            <img src="assets/Imagenes/twitter.png" alt="twitter" >
+                        </a>
+                    </div>  
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-1" class="red">        
+                        <a target="blank" href="https://www.youtube.com/">
+                            <img src="assets/Imagenes/youtube.png" alt="youtube">
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-1 "class="red" > 
+                        <a target="blank" href="https://www.instagram.com/?hl=es-la">
+                            <img src="assets/Imagenes/instagram.png" alt="Instagram"  >
+                        </a>
+                    </div>
+            </div>
+        
+                 <div class="row justify-content-around frases">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 frase1">
+                           <p>Bogotá, D.C</p>
+                           
+                       </div>
+                       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 frase2 float-right">
+                            <p>Tu Impacto Colombia 2019 Copyright © Todos los derechos reservados.</p>
+                        </div>
+                 </div>
+                
+            </div>
+<footer>

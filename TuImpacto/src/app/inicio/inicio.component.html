@@ -16,21 +16,18 @@
     <!--<div class="col-6 d-none d-md-block Menu" >-->
             <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  Menu" >
                 <ul class=" nav">
-                    <li><a class="col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 dropbtn" routerLink="/">INICIO</a></li>
-                    <li><a class="dropbtn" routerLink="/conocenos">CONÓCENOS</a></li>
+                    <li><a class="col-xs-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 dropbtn" routerLink="/"><b>INICIO</b></a></li>
+                    <li><a class="dropbtn" routerLink="/conocenos"><b>CONÓCENOS</b></a></li>
                     <li><div class="dropdown" style="float:right;">
-                            <a  class="dropbtn">INVOLÚCRATE</a>
+                            <a  class="dropbtn"><b>INVOLÚCRATE</b></a>
                             <div class="dropdown-content">
                                     <form>
-                                            <br><br>
                                             <!--<li><input type="text" id="email" name="correo" placeholder="Correo Electrónico"class="bloque"></li>
                                             <br><br>
                                             <li><input type="password" id="passw" name="contraseña" placeholder="Contraseña"class="bloque"></li>
                                             <br>-->
-                                            <li><a routerLink="/inicio_sesion" class="bloque">Iniciar Sesión</a></li>
-                                            
-                                            <br>
-                                            <li><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
+                                            <li *ngIf="!auth.isLoggedIn()"><a routerLink="/inicio_sesion" class="bloque">Iniciar Sesión</a></li>
+                                            <li *ngIf="!auth.isLoggedIn()"><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
                                     </form>
                             </div>
                         </div>
@@ -40,10 +37,10 @@
     </div>
 </div>
 
-
+<body>
 <div class="row  justify-content-center">
         <div class="col-8 col-md-5 col-lg-4 col-xl-3 boton1 borde11">
-            <a class="btn"href="#SECCIONIMPACTO">IMPACTO</a>
+            <a class="btn" href="#SECCIONIMPACTO">IMPACTO</a>
 
         </div>
         <div class="col-8 col-md-5 col-lg-4 col-xl-3 boton1 borde11">
@@ -70,21 +67,21 @@
             <img src="assets/Imagenes/Est3.png"  alt="Estadistica1" width="150" height="150"> 
             </div>
             <div class="col-12  col-md-7 col-lg-4 col-xl-2  seccioninfo">
-                <p> mil millones de botellas de plástico de un solo uso son producidas cada año.</p>
+                <p>mil millones de botellas de plástico de un solo uso son producidas cada año.</p>
                 
             </div>
             <div class="col-7  col-md-5 col-lg-5 col-xl-2 seccion ">
                     <img src="assets/Imagenes/Est1.png"  alt="Estadistica1" width="150" height="150"> 
             </div>
             <div class="col-12 col-md-7 col-lg-4 col-xl-2 seccioninfo">
-                <p> de los plásticos desechados hasta hoy ha terminado en el medioambiente.</p>
+                <p>de los plásticos desechados hasta hoy ha terminado en el medioambiente.</p>
                     
             </div>
             <div class="col-7 col-md-5 col-lg-5 col-xl-2 seccion ">
                     <img src="assets/Imagenes/Est2.png"  alt="Estadistica1" width="150" height="150"> 
             </div>
             <div class="col-12 col-md-7 col-lg-4 col-xl-2  seccioninfo">
-                <p> de las tortugas marinas ha ingerido algún desecho plástico al confundirlo con alimento.</p>          
+                <p>de las tortugas marinas ha ingerido algún desecho plástico al confundirlo con alimento.</p>          
             </div>
         </div>
 </div>
@@ -144,20 +141,26 @@
                         
            </div>
         </div> 
-   <div class="container-fluid ">
-              <div class="row justify-content-center tips">
-          
-                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 ImgBolsa hidden">
-                        <img src="assets/Imagenes/Bolsa.jpg" class="img-fluid" alt="Imagen"> 
-                    
-
-                    <div class="details">
-                        <h2>What is Lorem Ipsum?</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>      
-    </div>
+        <div class="container-fluid col-10 d-md-block">
+                <div class="row justify-content-center tips snip1361">
+            
+  
+             
+              <figure class="snip1361">
+                  <img src="assets/Imagenes/Bolsa.jpg" alt="sample45" />
+                  <figcaption>
+                    <h3>Cifras como las siguientes deberían alertarnos para generar cambios favorables en el ecosistema.</h3>
+                    <p>•Cada año en el mundo son utilizadas cerca de 500 mil millones de bolsas de plástico. <br>
+                      •	El tiempo de vida útil de una bolsa de plástico, es de un cuarto de hora.<br>
+                      •	Se estima que, en promedio, cada habitante de la Tierra utiliza 150 bolsas al año, material suficiente para dar la vuelta al mundo unas 4.200 veces.  <br>
+                      •	Para el año 2050 habrá (por peso) más plástico que peces en los océanos del mundo.<br>
+                      •	Los envases y productos hechos de plástico que hoy están en los océanos, pueden rodear la Tierra cuatro veces en un solo año. <br>
+                      •	El 80% de la contaminación en este ecosistema es causada por el ser</p>
+                  </figcaption>
+                  <a href="#"></a>
+                </figure>  
+              </div>    
+      </div>
   
    <div class="container-fluid   border Actualidad" style="height: 1000px;" id="SECCIONACTUALIDAD">
              
@@ -169,7 +172,7 @@
            </div>
    </div>
 
-   <div class="container">
+<div class="container">
    <div class="row justify-content-around Noticias">
            <div class="col-12 col-sm-12 col-md-8 col-lg-5 col-xl-4  seccion">
                    <div class="card" style="width:25em">
@@ -221,4 +224,48 @@
                </div>
     </div>
 </div>
+</body>
 
+<footer>
+        <div class="container">
+        
+            <div class="row ">
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 frase">
+                           <p><b>"Como consumidor tienes mucho por hacer para el Planeta"</b></p>
+                   </div>
+                 </div>
+                <div class="row  Redes">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" class="red">
+                        <a target="blank" href="https://www.facebook.com/">
+                          <img src="assets/Imagenes/facebook.png" alt="facebook">
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-1" class="red">
+                         <a target="blank" href="https://twitter.com/?lang=es">
+                            <img src="assets/Imagenes/twitter.png" alt="twitter" >
+                        </a>
+                    </div>  
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-1" class="red">        
+                        <a target="blank" href="https://www.youtube.com/">
+                            <img src="assets/Imagenes/youtube.png" alt="youtube">
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-1 "class="red" > 
+                        <a target="blank" href="https://www.instagram.com/?hl=es-la">
+                            <img src="assets/Imagenes/instagram.png" alt="Instagram"  >
+                        </a>
+                    </div>
+            </div>
+        
+                 <div class="row justify-content-around frases">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 frase1">
+                           <p>Bogotá, D.C</p>
+                           
+                       </div>
+                       <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 frase2 float-right">
+                            <p>Tu Impacto Colombia 2019 Copyright © Todos los derechos reservados.</p>
+                        </div>
+                 </div>
+                
+            </div>
+<footer>

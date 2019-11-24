@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare var jQuery:any;
+declare var $:any;
 
 @Component({
   selector: 'app-conocenos',
@@ -11,5 +13,7 @@ export class ConocenosComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  public toggleMenu(){
+    $('.Menu').slideToggle();
+}
 }
