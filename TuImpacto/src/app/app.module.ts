@@ -6,6 +6,7 @@ import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 import { InicioComponent } from './inicio/inicio.component';
 import { ConocenosComponent } from './conocenos/conocenos.component';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
@@ -18,8 +19,8 @@ import { AuthenticationService } from './authentication.service'
 import { AuthGuardService } from './auth-guard.service';
 import { PerfilComponent } from './perfil/perfil.component'
 
-const routes :Route []= [
-{path:'', component:InicioComponent},
+const routes: Route[] = [
+{path: '', component:InicioComponent},
 {path: 'conocenos', component:ConocenosComponent },
 {path: 'registrarse', component:RegistrarseComponent },
 {path: 'inicio_sesion', component:InicioSesionComponent },
@@ -43,12 +44,11 @@ canActivate:[AuthGuardService]}
     RegistrarseComponent,
     InicioSesionComponent,
     PerfilComponent
-
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     RouterModule.forRoot(routes),
     AppRoutingModule
   ],
