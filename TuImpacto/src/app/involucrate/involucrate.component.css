@@ -16,19 +16,20 @@ body{
 }*/
 
 .iconos1{
-  padding-top: 7%;
-  padding-bottom: 8%;
+  padding-top: 2%;
+  padding-bottom: 3%;
 }
 
 .iconos2{
-  padding-top: 17%;
+  padding-top: 5%;
   padding-bottom: 7%;
 }
 
 .iconP{
-  padding-top: 2%;
-  padding-bottom: 2%;
+  /*padding-top: 2%;
+  padding-bottom: 2%;*/
   width: 10em;
+  cursor: pointer;
 }
 
 .iconP:hover {
@@ -234,5 +235,51 @@ footer{
   padding-left: 0.2em;
   padding-right: 0.2em;
   width: 4em;
+}
+
+/**/
+
+.infoIconos{
+  text-align: right;
+  letter-spacing: 2px;
+  color:black;
+}
+
+.infoIconos p{
+  font-size: 1.8em;
+}
+
+/*.iconP{
+    padding-top: 5em;
+    padding-bottom: 5em;
+}*/
+
+
+#termometro{
+  transition: 5s;
+}
+.termometro{
+  padding-top: 13%;
+  text-align: center !important;
+  transition: 0.3s linear;
+  /* transition: 5s; */
+  animation: scale 3s;
+  animation-iteration-count: infinite;
+}
+
+.imgt{
+  width: 20em;
+}
+
+@keyframes scale {
+  0% { transform: scale(1,1) }
+
+  /* 25% { transform: scale(1.02,1.02);} */
+
+  50% { transform: scale(1.02,1.02); }
+
+  /* 75% { transform: scale(0.98,0.98); } */
+
+  100% { transform: scale(1,1); }
 }
 

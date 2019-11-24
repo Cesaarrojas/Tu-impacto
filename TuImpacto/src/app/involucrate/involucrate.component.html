@@ -57,37 +57,50 @@
     <div class="container">
             <div class="row justify-content-around iconos1">
                     <div class="icon1 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
-                        <img class="iconP" src="assets/Imagenes/Botella.png" alt="Icono" >
+                            <img (click)="info1()"(dblclick)="acepto1()"  class="iconP" src="assets/Imagenes/Botella.png" id="Icono1" >
 
                     </div>
             
                     <div class="icon2 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
-                        <img class="iconP" src="assets/Imagenes/Cepillo.png" alt="Icono" >
+                            <img (click)="info2()"(dblclick)="acepto2()" class="iconP" src="assets/Imagenes/Cepillo.png" id="Icono2" >
                     </div>
             
                     <div class="icon3 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
-                        <img class="iconP" src="assets/Imagenes/BolsaP.png" alt="Icono">
+                            <img (click)="info3()"(dblclick)="acepto3()" class="iconP" src="assets/Imagenes/BolsaP.png" id="Icono3">
                     </div>
             </div>
+            <div class="infoIconos">
+                    <div class="icono" style="text-align: center;   letter-spacing: 2px;
+                    color:black; font-size: 1.8em;">
+                            <p id="base">Acciones para hacer tu aporte, pulsa una vez para ver la información y dos si ya la practicas!</p>
+    
+                    </div>
+            </div>
+
 
             <div class="row justify-content-around nubes">
                     <div class="map col-xs-12 col-sm-12 col-md-8 col-lg-4 col-xl-4" >
                     <!--<img src="assets/Imagenes/Nube.png" alt="Nubes">-->
-                <div class="mapa"></div>
+                    <div id="PLANETA"class="mapa " style="margin-top:105px;filter: grayscale(100%) blur(5px);"></div>
                    </div> 
             </div>
-        
+            <div class="row justify-content-center">
+                    <div class="termometro col-12">
+                        <img class="img-responsive imgt" src="assets/Imagenes/termometro.png" alt="Termometro" id="termometro">
+                     </div> 
+                </div>
+
             <div class="row justify-content-around iconos2">
                     <div class="icon1 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
-                            <img class="iconP" src="assets/Imagenes/Recipiente.png" alt="Icono">
+                            <img (click)="info4()"(dblclick)="acepto4()" class="iconP" src="assets/Imagenes/Recipiente.png" id="Icono4">
                     </div>
             
                     <div class="icon2 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
-                        <img class="iconP" src="assets/Imagenes/Maquina.png" alt="Icono" >
+                            <img (click)="info5()"(dblclick)="acepto5()" class="iconP" src="assets/Imagenes/Maquina.png" id="Icono5" >
                     </div>
             
                     <div class="icon3 col-xs-12 col-sm-12 col-md-8 col-lg-3 col-xl-3" >
-                        <img class="iconP" src="assets/Imagenes/Pitillos.png" alt="Icono">
+                            <img (click)="info6()"(dblclick)="acepto6()"class="iconP" src="assets/Imagenes/Pitillos.png" id="Icono6">
                     </div>
             </div>
      </div>
