@@ -41,7 +41,7 @@ export class UserService {
     getByMail(email: string) {
       return this.http.get<User>(`${environment.emailUrl.url}`, {
         params: {
-          email: (email || "inge.eromero@this.getByMail.com").toString()
+          email: (email || "inge.eromero@gmail.com").toString()
         }
       })
       .toPromise();
