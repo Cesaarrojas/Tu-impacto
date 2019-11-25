@@ -25,19 +25,25 @@ export class RegistrarseComponent {
   ) { }
 
   register() {
+    console.log('Entro al create');
+    console.log('El usuario es:');
+    console.log(this.usuario);
+    console.log('Contrasena1:');
+    console.log(this.contrasena1);
+    console.log('Contrasena2:');
+    console.log(this.contrasena2);
     if (this.contrasena1 === this.contrasena2) {
       this.usuario.contrasena = this.contrasena1;
       this.usuarioServicio
         .create(this.usuario)
         .then(result => {
-          'El usuario ha sido creado';
-            this.usuario = result;
+          alert('El usuario ha sido creado');
+          this.usuario = result;
         })
-        .catch(err => `Se ha presentado este ${err}`);
-    }
-    else {
+        .catch(err => alert(`Se ha presentado este ${err}`));
+    } else {
       // tslint:disable-next-line: no-unused-expression
-      Message: 'Las contraseñas deben ser iguales';
+      alert('Las contraseñas deben ser iguales');
     }
   }
 

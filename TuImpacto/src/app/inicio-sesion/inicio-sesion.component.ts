@@ -3,6 +3,10 @@ import {Router} from '@angular/router'
 import { AuthenticationService, TokenPayLoad} from '../authentication.service'
 declare var jQuery:any;
 declare var $:any;
+// Services
+import {UserService} from '../services/userService';
+// Models
+import {User} from '../models/userModel';
 
 @Component({
   selector: 'app-inicio-sesion',
@@ -10,25 +14,13 @@ declare var $:any;
   styleUrls: ['./inicio-sesion.component.css']
 })
 export class InicioSesionComponent  {
-  credentials: TokenPayLoad ={
-    id:0,
-    nombre: '',
-    apellido: '',
-    email: '',
-    contraseña:'',
-    edad: 0,
-    puntos: 0
-  }
-  constructor(private auth:AuthenticationService, private router: Router) { }
-  login(){
-    this.auth.login(this.credentials).subscribe(
-      ()=>{
-        this.router.navigateByUrl('/involucrate')
-      },
-      err=>{
-        console.log(err)
-      }
-    )
+  user: User;
+  constructor(private auth:AuthenticationService,
+    private router: Router,
+    private usuarioServicio: UserService) { }
+
+
+  login() {
   }
   public toggleMenu(){
     $('.Menu').slideToggle();

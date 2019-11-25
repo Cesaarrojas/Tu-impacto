@@ -50,7 +50,8 @@ canActivate:[AuthGuardService]}
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [AuthenticationService, AuthGuardService],
   bootstrap: [AppComponent]

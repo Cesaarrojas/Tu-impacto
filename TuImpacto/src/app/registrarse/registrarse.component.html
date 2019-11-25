@@ -20,9 +20,9 @@
                     <a  class="dropbtn">INVOLÚCRATE</a>
                     <div class="dropdown-content">
                         <form>
-                            <!--<li><textarea type="text" id="email" name="correo" placeholder="Correo Electrónico"class="bloque"></li>
+                            <!--<li><input type="text" id="email" name="correo" placeholder="Correo Electrónico"class="bloque"></li>
                             <br><br>
-                            <li><textarea type="password" id="passw" name="contraseña" placeholder="Contraseña"class="bloque"></li>
+                            <li><input type="password" id="passw" name="contraseña" placeholder="Contraseña"class="bloque"></li>
                             <br>-->
                             <li><a routerLink="/inicio_sesion" class="bloque">Iniciar Sesión</a></li>
                             <li><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
@@ -54,33 +54,27 @@
             <form (submit)="register()">
                 <br>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">
-                    <textarea type="text" id="nombre" name="nombre" placeholder="Nombre" [(ngModel)]="usuario.nombre">
-                    </textarea>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" [(ngModel)]="usuario.nombre">
                     <br><br>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">
-                    <textarea type="text" id="apellido" name="apellido" placeholder="Apellido" [(ngModel)]="usuario.apellido">
-                    </textarea>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" [(ngModel)]="usuario.apellido">
                     <br><br>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">
-                    <textarea type="number" id="edad" name="edad" placeholder="Edad" [(ngModel)]="usuario.edad">
-                    </textarea>
+                    <input type="number" id="edad" name="edad" placeholder="Edad" [(ngModel)]="usuario.edad">
                     <br><br>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">
-                    <textarea type="text" id="correo" name="correo" placeholder="Correo Electrónico" [(ngModel)]="usuario.email">
-                    </textarea>
+                    <input type="text" id="correo" name="correo" placeholder="Correo Electrónico" [(ngModel)]="usuario.email">
                     <br><br>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">
-                    <textarea type="password" id="contraseña" name="contraseña" placeholder="Contraseña" [(ngModel)]="contrasena1">
-                    </textarea>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" [(ngModel)]="contrasena1">
                     <br><br>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 daticos">
-                    <textarea type="password" id="contraseña2" name="contraseña2" placeholder="Confirmar Contraseña" [(ngModel)]="contrasena2">
-                    </textarea>
+                    <input type="password" id="contraseña2" name="contraseña2" placeholder="Confirmar Contraseña" [(ngModel)]="contrasena2">
                     <br><br>
                 </div>
 
@@ -88,7 +82,7 @@
             <div class="row  justify-content-center ">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12 col-xl-10 boton2 ">
                     <!--<button type="button" class="btn"><a routerLink="/involucrate">REGISTRARME</a></button>-->
-                    <a class="btn" routerLink="/involucrate" click="register()">REGISTRARME</a>
+                    <a class="btn" routerLink="/involucrate" type="submit" (click)="register()">REGISTRARME</a>
                 <br><br>
                 </div>
             </div>
