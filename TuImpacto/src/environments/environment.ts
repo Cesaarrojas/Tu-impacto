@@ -5,7 +5,10 @@
 export const environment = {
   production: false,
   impactoUrl: {
-    api_url: 'https://apiimpacto.herokuapp.com/api/v1/users/'
+    api_url: 'https://apiimpacto.herokuapp.com/api/v1/users'
+  },
+  emailUrl: {
+    url: 'https://apiimpacto.herokuapp.com/api/v1/usermail/'
   }
 };
 /*
