@@ -22,12 +22,12 @@
                             <a  class="dropbtn"><b>INVOLÚCRATE</b></a>
                             <div class="dropdown-content">
                                     <form>
-                                            <!--<li><input type="text" id="email" name="correo" placeholder="Correo Electrónico"class="bloque"></li>
-                                            <br><br>
-                                            <li><input type="password" id="passw" name="contraseña" placeholder="Contraseña"class="bloque"></li>
-                                            <br>-->
                                             <li *ngIf="!auth.isLoggedIn()"><a routerLink="/inicio_sesion" class="bloque">Iniciar Sesión</a></li>
                                             <li *ngIf="!auth.isLoggedIn()"><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
+                                            
+                                            <li><a routerLink="/inicio_sesion" class="bloque">Iniciar Sesión</a></li>
+                                            <li><a routerLink="/registrarse"  class="bloque2">Crear una cuenta</a></li>
+                                            <br>
                                     </form>
                             </div>
                         </div>
@@ -38,15 +38,17 @@
 </div>
 
 <body>
-<div class="row  justify-content-center">
-        <div class="col-8 col-md-5 col-lg-4 col-xl-3 boton1 borde11">
+    <div class="container">
+<div class="row justify-content-around ">
+        <div class="col-8 col-md-5 col-lg-4 col-xl-3 boton1 ">
             <a class="btn" href="#SECCIONIMPACTO">IMPACTO</a>
 
         </div>
-        <div class="col-8 col-md-5 col-lg-4 col-xl-3 boton1 borde11">
+        <div class="col-8 col-md-5 col-lg-4 col-xl-3 boton1 ">
             <a class="btn"href="#SECCIONACTUALIDAD">ACTUALIDAD</a>
         </div>
 
+</div>
 </div>
 
 <div class="container-fluid border Impacto" style="height: 1000px;"id="SECCIONIMPACTO">
@@ -130,7 +132,7 @@
            <div class="row justify-content-around  Contenido2">
           
            <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-5 I1_MInfo ">
-                   <img src="assets/Imagenes/Tortuga2.jpg" class="img-fluid" alt=""> 
+                   <img src="assets/Imagenes/Foca.jpg" class="img-fluid" alt=""> 
            </div>
            <div class="col-12 col-sm-10  col-md-10 col-lg-10 col-xl-7 T1_MInfo ">
                
@@ -147,14 +149,14 @@
   
              
               <figure class="snip1361">
-                  <img src="assets/Imagenes/Bolsa.jpg" alt="sample45" />
+                  <img  src="assets/Imagenes/Oceano4.jpg" alt="Imagen" />
                   <figcaption>
                     <h3>Cifras como las siguientes deberían alertarnos para generar cambios favorables en el ecosistema.</h3>
-                    <p>•Cada año en el mundo son utilizadas cerca de 500 mil millones de bolsas de plástico. <br>
-                      •	El tiempo de vida útil de una bolsa de plástico, es de un cuarto de hora.<br>
-                      •	Se estima que, en promedio, cada habitante de la Tierra utiliza 150 bolsas al año, material suficiente para dar la vuelta al mundo unas 4.200 veces.  <br>
-                      •	Para el año 2050 habrá (por peso) más plástico que peces en los océanos del mundo.<br>
-                      •	Los envases y productos hechos de plástico que hoy están en los océanos, pueden rodear la Tierra cuatro veces en un solo año. <br>
+                    <p>•Cada año en el mundo son utilizadas cerca de 500 mil millones de bolsas de plástico. <br><br>
+                      •	El tiempo de vida útil de una bolsa de plástico, es de un cuarto de hora.<br><br>
+                      •	Se estima que, en promedio, cada habitante de la Tierra utiliza 150 bolsas al año, material suficiente para dar la vuelta al mundo unas 4.200 veces.  <br><br>
+                      •	Para el año 2050 habrá (por peso) más plástico que peces en los océanos del mundo.<br><br>
+                      •	Los envases y productos hechos de plástico que hoy están en los océanos, pueden rodear la Tierra cuatro veces en un solo año. <br><br>
                       •	El 80% de la contaminación en este ecosistema es causada por el ser</p>
                   </figcaption>
                   <a href="#"></a>

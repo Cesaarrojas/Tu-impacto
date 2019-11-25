@@ -4,6 +4,9 @@ import { AuthenticationService, UserDetails} from '../authentication.service';
 import {UserService} from '../services/userService';
 // Model
 import {User} from '../models/userModel';
+declare var jQuery:any;
+declare var $:any;
+
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html',
@@ -28,4 +31,10 @@ export class PerfilComponent {
     })
     .catch(err => alert(err));
   }
+  public toggleMenu(){
+    $('.Menu').slideToggle();
 }
+
+}
+
+

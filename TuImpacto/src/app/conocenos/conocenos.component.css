@@ -20,6 +20,15 @@
     transform: scale(1);
 }
 
+.card-img-top{
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);	
+}
+
 button{
     text-decoration: none;
 }
@@ -42,4 +51,8 @@ footer{
     padding-left: 0.2em;
     padding-right: 0.2em;
     width: 4em;
+
+}
+.red img:hover{
+    filter: opacity(.5);;
 }

@@ -63,13 +63,13 @@ termometro(){
 }
 info1() {
   var objeto = < HTMLImageElement > document.getElementById("base");  
-  objeto.innerHTML="Intenta conseguir productos de higiene y cuidado personal que no estén envasados en plásticos y de ser posible, hechos en otros materiales";
+  objeto.innerHTML="Elige envases para tus bebidas y líquidos que sean retornables, como el vidrio, en lugar de botellas de plástico.";
 }
 acepto1() {
   var objetoimg = < HTMLImageElement > document.getElementById("Icono1");  
   objetoimg.src = "assets/Imagenes/BotellaV.png";
   var objeto = < HTMLImageElement > document.getElementById("base");  
-  objeto.innerHTML="¡GENIAL!";
+  objeto.innerHTML="¡Excelente! Es un grandioso aporte.";
   puntos = puntos + 1;
   // alert('puntos: '+puntos); 
   this.termometro();
@@ -77,11 +77,11 @@ acepto1() {
 }
 info2() {
   var objeto = < HTMLImageElement > document.getElementById("base");  
-  objeto.innerHTML="Elige envases para tus bebidas y líquidos que sean retornables, como el vidrio, en lugar de brik y botellas de plástico.";
+  objeto.innerHTML="Intenta conseguir productos de higiene y cuidado personal que no estén envasados en plásticos y de ser posible, hechos en otros materiales";
 }
 acepto2() {
   var objeto = < HTMLImageElement > document.getElementById("base");  
-  objeto.innerHTML="SÚPER!";
+  objeto.innerHTML="El Planeta Tierra te lo agradece.";
   var objetoimg = < HTMLImageElement > document.getElementById("Icono2");  
   objetoimg.src = "assets/Imagenes/CepilloV.png";
   puntos = puntos + 1;
@@ -94,7 +94,7 @@ info3() {
 }
 acepto3() {
   var objeto = < HTMLImageElement > document.getElementById("base");  
-  objeto.innerHTML="MUY BIEN!";
+  objeto.innerHTML="¡Muy bien! Es un gran aporte para el Planeta";
   var objetoimg = < HTMLImageElement > document.getElementById("Icono3");  
   objetoimg.src = "assets/Imagenes/BolsaPV.png";
   puntos = puntos + 1;
@@ -109,20 +109,20 @@ acepto4() {
   var objetoimg = < HTMLImageElement > document.getElementById("Icono4");  
   objetoimg.src = "assets/Imagenes/RecipienteV.png";
   var objeto = < HTMLImageElement > document.getElementById("base");  
-  objeto.innerHTML="¡GRAN AVANCE!";
+  objeto.innerHTML="¡Estupendo! Esto es un gran avance.";
   puntos = puntos + 1;
   // alert('puntos: '+puntos);
   this.termometro();
 }
 info5() {
   var objeto = < HTMLImageElement > document.getElementById("base");  
-  objeto.innerHTML="Di no a las maquinillas de afeitar desechables, cámbialas por una maquinilla eléctrica o bien de metal con cuchillas sustituibles, lo que te permitirá ahorrar mucho dinero.";
+  objeto.innerHTML="Di no a las maquinas de afeitar desechables, cámbialas por una maquina eléctrica o bien de metal con cuchillas sustituibles, lo que te permitirá ahorrar mucho dinero.";
 }
 acepto5() {
   var objetoimg = < HTMLImageElement > document.getElementById("Icono5");  
   objetoimg.src = "assets/Imagenes/MaquinaV.png";
   var objeto = < HTMLImageElement > document.getElementById("base");  
-  objeto.innerHTML="¡GENIAL!";
+  objeto.innerHTML="¡Genial! Ahorras dinero y ayudas al medio ambiente.";
   puntos = puntos + 1;
   // alert('puntos: '+puntos); 
   this.termometro();
@@ -135,7 +135,7 @@ acepto6() {
   var objetoimg = < HTMLImageElement > document.getElementById("Icono6");  
   objetoimg.src = "assets/Imagenes/PitillosV.png";
   var objeto = < HTMLImageElement > document.getElementById("base");  
-  objeto.innerHTML="!SIGUE ASI!";
+  objeto.innerHTML="!Sigue asi! Es una gran contribución para el planeta tierra. ";
   puntos = puntos + 1;
   // alert('puntos: '+puntos);
   this.termometro();

@@ -237,6 +237,10 @@ footer{
   width: 4em;
 }
 
+.red img:hover{
+  filter: opacity(.5);;
+}
+
 /**/
 
 .infoIconos{
