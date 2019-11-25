@@ -26,11 +26,7 @@ const routes: Route[] = [
 {path: 'inicio_sesion', component:InicioSesionComponent },
 {path: 'involucrate', component:InvolucrateComponent },
 {path: 'perfil',
-component: PerfilComponent, 
-canActivate:[AuthGuardService]}
-
-];
-
+component: PerfilComponent}]; 
 
 @NgModule({
   declarations: [
